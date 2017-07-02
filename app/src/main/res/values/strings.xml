@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PullDemo</string>
+
+    <string name="txt_pull_refresh_normal">下拉可以刷新</string>
+    <string name="txt_pull_refresh_release">松开立即刷新</string>
+    <string name="txt_pull_refresh_loading">正在刷新数据...</string>
+    <string name="txt_pull_refresh_success">刷新数据成功</string>
+
+</resources>

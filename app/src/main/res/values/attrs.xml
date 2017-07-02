@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LoadingView">
+        <attr name="lv_bar_color" format="color|reference" />
+        <attr name="lv_bar_num" format="integer|reference" />
+        <attr name="lv_tree_observer" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ArrowView">
+        <attr name="av_top" format="boolean" />
+        <attr name="av_bottom" format="boolean" />
+        <attr name="av_left" format="boolean" />
+        <attr name="av_right" format="boolean" />
+        <attr name="av_color" format="color|reference" />
+        <attr name="av_angle_width" format="dimension|reference" />
+        <attr name="av_angle_height" format="dimension|reference" />
+        <attr name="av_line_width" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PullRefreshLoadLayout">
+        <attr name="prll_pull_color" format="color|reference" />
+    </declare-styleable>
+
+</resources>

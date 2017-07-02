@@ -1,0 +1,12 @@
+<com.kalu.pull.widget.PullRefreshLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_tab_pull"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <com.kalu.pull.widget.PullRecyclerView
+        android:id="@+id/main_tab_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.kalu.pull.widget.PullRefreshLoadLayout>

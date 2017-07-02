@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:layout_alignParentBottom="true">
+
+        <com.kalu.pull.widget.TextBoldView
+            android:id="@+id/custom_pull_header_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/d25"
+            android:layout_marginTop="@dimen/d8"
+            android:lines="1"
+            android:text="@string/txt_pull_refresh_normal"
+            android:textColor="@color/black_85"
+            android:textSize="@dimen/s13" />
+
+        <com.kalu.pull.widget.TextBoldView
+            android:id="@+id/custom_pull_header_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/d8"
+            android:layout_marginLeft="@dimen/d25"
+            android:lines="1"
+            android:text="最后更新: 未知"
+            android:textColor="@color/black_85"
+            android:textSize="@dimen/s13" />
+
+        <com.kalu.pull.widget.ArrowView
+            android:id="@+id/custom_pull_header_arrow"
+            android:layout_width="@dimen/d15"
+            android:layout_height="@dimen/d30"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/custom_pull_header_time"
+            app:av_angle_height="@dimen/d5"
+            app:av_angle_width="@dimen/d3"
+            app:av_bottom="true"
+            app:av_color="@color/black_80"
+            app:av_line_width="@dimen/d2" />
+
+        <com.kalu.pull.widget.LoadingView
+            android:id="@+id/custom_pull_header_loading"
+            android:layout_width="@dimen/d18"
+            android:layout_height="@dimen/d18"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/custom_pull_header_time"
+            android:visibility="gone"
+            app:lv_bar_color="@color/black"
+            app:lv_bar_num="10" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
