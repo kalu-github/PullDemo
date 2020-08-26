@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PullDemo.iml" filepath="$PROJECT_DIR$/PullDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PullDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/PullDemo.iml" group="PullDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="PullDemo/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_pull/lib_pull.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_pull/lib_pull.iml" group="PullDemo/lib_pull" />
     </modules>
   </component>
 </project>

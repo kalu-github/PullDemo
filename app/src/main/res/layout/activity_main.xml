@@ -1,12 +1,14 @@
-<com.kalu.pull.widget.PullRefreshLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main_tab_pull"
+<lib.kalu.pull.widget.PullRefreshLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_pull"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray">
+    android:background="#999999">
 
-    <com.kalu.pull.widget.PullRecyclerView
-        android:id="@+id/main_tab_recycler"
+    <lib.kalu.pull.widget.PullTextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="下拉试试..." />
 
-</com.kalu.pull.widget.PullRefreshLoadLayout>
+</lib.kalu.pull.widget.PullRefreshLoadLayout>

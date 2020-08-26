@@ -1,8 +1,10 @@
-package com.kalu.pull.widget;
+package lib.kalu.pull.widget;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class PullLinearLayout extends LinearLayout implements Pullable {
@@ -20,7 +22,18 @@ public class PullLinearLayout extends LinearLayout implements Pullable {
     }
 
     @Override
-    public boolean canRefresh(PullRefreshLoadLayout parent, View child) {
-        return true;
+    public boolean canPull(PullRefreshLoadLayout parent) {
+        View childAt = getChildAt(1);
+        return childAt.getScrollY() == 0;
+    }
+
+    @Override
+    public void loadGif(@NonNull ImageView imageView, int res) {
+
+    }
+
+    @Override
+    public void stopGif(@NonNull ImageView imageView) {
+
     }
 }

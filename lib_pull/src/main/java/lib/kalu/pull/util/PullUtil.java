@@ -1,16 +1,12 @@
-package com.kalu.pull;
-
+package lib.kalu.pull.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * description: 时间工具类
- * created by kalu on 2017/7/2 21:29
- */
-public class DateUtil {
+public class PullUtil {
+
     // 标准日期时间格式
     /**
      * yyyy-MM
@@ -208,5 +204,28 @@ public class DateUtil {
         }
 
         return format(date, formatStr);
+    }
+
+    public static String getHH() {
+
+        Date date = new Date();
+        SimpleDateFormat df = new SimpleDateFormat("HH");
+        String str = df.format(date);
+        int a = Integer.parseInt(str);
+        if (a >= 0 && a <= 6) {
+            return "凌晨";
+        } else if (a > 6 && a <= 12) {
+            return "上午";
+        } else if (a > 12 && a <= 13) {
+            return "中午";
+        } else if (a > 13 && a <= 18) {
+            return "下午";
+        } else {
+            return "晚上";
+        }
+//        if (a > 18 && a <= 24) {
+//            view.setText(view, R.id.fingerprint_date, "晚上好");
+//        }
+
     }
 }
